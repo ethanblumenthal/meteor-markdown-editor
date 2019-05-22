@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withTracker } from 'meteor/react-meteor-data'
 import BinsEditor from './BinsEditor'
+import BinsViewer from './BinsViewer'
 import { Bins } from '../../../imports/collections/Bins'
 
 class BinsMain extends Component {
@@ -12,6 +13,7 @@ class BinsMain extends Component {
     return (
       <div>
         <BinsEditor bin={this.props.bin} />
+        <BinsViewer bin={this.props.bin} />
       </div>
     )
   }
