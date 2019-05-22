@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 export default () => {
   return (
-    <div>Markdown Editor</div>
+    <div>
+      <Header />
+    </div>
   )
 }
