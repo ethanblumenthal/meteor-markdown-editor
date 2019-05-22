@@ -7,11 +7,11 @@ import BinsMain from './bins/BinsMain'
 export default props => {
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Switch>
           <Route exact path="/" component={BinsList} />
-          <Route exact path="/bins" component={BinsMain} />
+          <Route exact path="/bins/:binId" component={BinsMain} />
         </Switch>
       </BrowserRouter>
     </div>
