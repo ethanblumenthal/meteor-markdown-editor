@@ -24,5 +24,6 @@ class BinsMain extends Component {
 export default withTracker(props => {
   const { binId } = props.match.params
   Meteor.subscribe('bins')
+  Meteor.subscribe('sharedBins')
   return { bin: Bins.findOne(binId) }
 })(BinsMain)
